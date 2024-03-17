@@ -126,3 +126,39 @@
   background-color: #f8f9fa; /* Change background color of card body on hover */
 }
 
+
+@keyframes moveForward {
+  0% {
+      transform: translate(0%, 0%);
+  }
+
+  50% {
+      transform: translate(20%, 20%);
+  }
+
+  100% {
+      transform: translate(40%, 40%);
+  }
+}
+
+@keyframes moveBackward {
+  0% {
+      transform: translate(0%, 0%);
+  }
+
+  50% {
+      transform: translate(20%, 20%);
+  }
+
+  100% {
+      transform: translate(40%, 40%);
+  }
+}
+
+.image-container img {
+  animation: moveForward 4s infinite alternate;
+}
+
+.navbar-brand .image-container{
+  animation:backwards 4s infinite alternate
+}
